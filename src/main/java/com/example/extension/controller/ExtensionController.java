@@ -26,7 +26,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
  * 확장자에 대한 Controller.
  */
 @Tag(name = "Extensions", description = "확장자 API")
-@CrossOrigin(origins = "http://localhost:9432")
+@CrossOrigin(origins = {"http://localhost:9432", "https://www.fclemonschool.click"})
 @RestController
 @RequestMapping(value = "/api/v1/extensions")
 public class ExtensionController {

@@ -1,11 +1,11 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:593350137309:task-definition/extension-no-alb:2",
+  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:593350137309:task-definition/extension-no-alb:5",
   "containerDefinitions": [
     {
       "name": "extensions",
       "image": "593350137309.dkr.ecr.ap-northeast-2.amazonaws.com/extensions:latest",
       "cpu": 0,
-      "memory": 300,
+      "memory": 400,
       "portMappings": [
         {
           "containerPort": 8080,
