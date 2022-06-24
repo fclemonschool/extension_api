@@ -8,5 +8,6 @@ RUN gradle build --no-daemon
 FROM openjdk:8-jre-alpine
 WORKDIR /root/
 COPY --from=builder /usr/src/extension/build/libs/extension-0.0.1-SNAPSHOT.jar ./app.jar
+COPY --from=builder /usr/src/extension/extension.mv.db ./extension.mv.db
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "./app.jar"]
